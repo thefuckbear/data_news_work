@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>通勤贫困：当代都市青年的"第二份工" | 通勤洞察</title>
+
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<div class="site-wrap" id="home-section">
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="site-navbar py-3 js-sticky-header site-navbar-target" role="banner" style="background-color: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6 col-md-3 col-xl-3">
+          <h1 class="mb-0 site-logo">
+            <a href="index.html" class="text-black h3 mb-0 fw-bold">
+              通勤洞察<span class="text-primary"> . 职场青年</span>
+            </a>
+          </h1>
+        </div>
+        <div class="col-12 col-md-9 col-xl-9 main-menu">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+              <li><a href="#home-section" class="nav-link active">首页</a></li>
+              <li><a href="#part1" class="nav-link">通勤现状</a></li>
+              <li><a href="#part2" class="nav-link">群体画像</a></li>
+              <li><a href="#part3" class="nav-link">溯源分析</a></li>
+              <li><a href="#part4" class="nav-link">代价分析</a></li>
+              <li><a href="#part5" class="nav-link">破局之道</a></li>
+              <li><a href="#end-section" class="nav-link">结语</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0">
+          <a href="#" class="site-menu-toggle js-menu-toggle text-black float-right">
+            <span class="icon-menu h3"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="site-blocks-cover overflow-hidden">
+    <div class="bg-overlay align-content-center" style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.7)); z-index: 1;"></div>
+    <img src="images/background/bg1.jpg" alt="都市青年通勤背景" class="img-fluid img-absolute" style="object-fit: cover; height: 100%; width: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center" style="min-height: 100vh; position: relative; z-index: 2;">
+        <div class="col-md-10 col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-uppercase text-light mb-3" style="letter-spacing: 0.2em; font-size: 0.9rem; opacity: 0.9;">
+            <i class="fas fa-chart-line me-2"></i>2020-2023年城市青年通勤数据分析报告
+          </p>
+          <h1 class="display-4 fw-bold text-white mb-4">
+            通勤贫困：当代都市青年的
+            <span class="text-primary">"第二份工"</span>
+          </h1>
+          <p class="lead text-light mb-5" style="font-size: 1.25rem; line-height: 1.7; opacity: 0.95;">
+            基于<span class="fw-bold">2020-2023年主要城市通勤数据</span>的深度分析报告，
+            揭示极端通勤背后的群体画像、社会影响与系统性困境。
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-delay="300">
+            <a href="#part1" class="btn btn-primary btn-lg px-5 py-3">
+              <i class="fas fa-chart-bar me-2"></i>向下探索
+            </a>
+          </div>
+          <div class="mt-3 pt-3" data-aos="fade-up" data-aos-delay="500">
+            <a href="#end-section" class="btn btn-outline-light btn-lg px-5 py-3">
+              <i class="fas fa-book-open me-2"></i>阅读报告结论
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-light" id="part1">
+    <div class="container">
+      <div class="row justify-content-center mb-5" data-aos="fade-up">
+        <div class="col-lg-10 col-xl-8 text-center">
+          <h2 class="section-title mb-4">通勤现状</h2>
+          <div class="lead-content p-4 p-md-5 bg-white shadow-sm rounded border-start border-4">
+            <p class="lead mb-0">
+              清晨6：30，当这座城市的大多数人还在沉睡，李明的手机闹钟已第三次响起。他必须在20分钟内洗漱完毕，赶到距离出租屋1公里的地铁站，开始长达75分钟的"极端通勤"，从广州边缘的增城赶往天河CBD的写字楼。
+              "通勤"，这个本应是工作与生活之间的简单连接，如今却变成职场青年的"第二份工"。国家统计局的数据与各类通勤报告，描绘出一幅令人窒息的图景：全国主要城市平均通勤时间正不断逼近单程40分钟的临界点。若以每日往返计算，意味着每位职场人平均每天有超过1.5小时被固定消耗在路途上——这尚未计算因拥堵、延误所产生的额外时间。
+              《2023年度中国主要城市通勤监测报告》的数据指出：在全国超大城市中，平均通勤距离已突破10公里，承受60分钟以上"极端通勤" 的人口比例，在个别城市已突破20%。这意味着，每五个都市上班族中，就有一人每日需要为工作支付至少两小时的"在路上"成本。
+            </p>
+            <footer class="blockquote-footer mt-3 text-muted text-end">数据来源：<cite title="《2023年度中国主要城市通勤监测报告》">《2023年度中国主要城市通勤监测报告》</cite></footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center align-items-center" data-aos="fade-right">
+        <div class="col-lg-8">
+          <div class="position-relative text-center">
+            <div class="p-1 rounded-lg shadow-lg" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+              <img src="images/background/bg2.jpg" alt="拥挤的地铁通勤场景" class="img-fluid rounded">
+            </div>
+            <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <small><i class="fas fa-clock me-1"></i> 时间成本 · 经济成本 · 幸福感成本</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 text-center" style="margin-top: 100px; margin-bottom: 100px">
+        <h2 class="section-title mb-3">数据可视化：城市通勤时间统计</h2>
+      </div>
+
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col-12">
+          <div style="width: 100%; height: 600px; overflow: hidden;">
+            <tableau-viz id="tableauViz1" src="https://public.tableau.com/views/_17678732910040/2020-202360?:embed=true&:showVizHome=no" toolbar="bottom" hide-tabs></tableau-viz>
+          </div>
+          极端通勤：60分钟以上通勤
+        </div>
+      </div>
+
+      <div class="row mb-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-12">
+          <div style="width: 100%; height: 600px; overflow: hidden;">
+            <tableau-viz id="tableauViz2" src="https://public.tableau.com/views/_17678732910040/2020-202345?:embed=true&:showVizHome=no" toolbar="bottom" hide-tabs></tableau-viz>
+          </div>
+          45分钟以内通勤：健康通勤
+        </div>
+      </div>
+
+      <p class="text-center text-muted mt-2 small">数据来源：中国城市规划设计研究院《中国主要城市通勤监测报告》</p>
+
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-7 text-center mb-5">
+          <p class="subtitle" style="margin-top: 10px; font-size: 30px">
+            这漫长的通勤路，正像一条无声的溪流，日日冲刷着当代职场人的时间与精力。那些耗费在地铁换乘、公交拥堵、高速停滞中的分分秒秒，
+            不仅侵占了宝贵的睡眠与早餐时间，更在出发与抵达之间，筑起了一道疲惫的高墙，悄然吞噬着生活的热情，模糊着个人发展与生存成本的边界。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-big site-section bg-white" id="part2">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-10 text-center" data-aos="fade-up">
+          <h2 class="section-title text-black">群体画像：谁在承受"通勤贫困"的压力？</h2>
+          <p class="lead">
+            "通勤贫困"并非均匀地分布在每个职场人身上，它通过城市空间、行业与收入，精准地筛选出了它的主要承受者。
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="feature-bg-image p-1 rounded" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <img src="images/image2.png" alt="高学历青年通勤群体数据图表" class="img-fluid rounded shadow-sm">
+            <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <i class="fas fa-user-graduate me-1"></i> 图：青年通勤群体学历分布
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2 small">数据来源：微信公众号</p>
+        </div>
+        <div class="col-lg-5 ml-auto mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="pl-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #f5576c;">特征一</span>
+            <h2 class="text-black mb-4">青年，尤其是高学历青年，成为通勤主力军</h2>
+            <p class="mb-4">
+              调查数据显示，在承受着主要通勤压力的群体中，<strong>本科学历者占比最高，达到 74.7%</strong>，紧随其后的是大专学历者，占 <strong>14.8%</strong>。两者合计，大专及以上学历的青年群体构成了通勤人口的绝对主力，<strong>占比近九成</strong>。
+            </p>
+            <p class="mb-4">
+              这一现象与中国的城市化进程和就业结构紧密相关。高学历青年更倾向于聚集在拥有更多就业机会和发展空间的超大、特大城市。然而，这些城市高昂的居住成本，又迫使他们为了控制生活成本而选择居住在远离市中心或核心就业区的地方，从而被动拉长了通勤距离与时间。
+            </p>
+            <div class="author-box" data-aos="fade-in">
+              <blockquote class="border-start ps-3">
+                &ldquo;数据揭示：<strong>近90%</strong> 的长时间通勤者拥有大专以上学历，知识与时间在通勤路上同步消耗。&rdquo;
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-5 order-2 order-lg-1 mr-auto mt-4 mt-lg-0" data-aos="fade-right">
+          <div class="pr-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #4facfe;">特征二</span>
+            <h2 class="text-black mb-4">行业分布与收入水平，决定了通勤的"性价比"</h2>
+            <p class="mb-4">
+              通勤压力在不同行业间呈现出显著差异。从城镇各行业的青年就业人员占比来看，<strong>制造业、教育和服务业</strong>等行业吸纳了最多的青年就业人口。这些行业往往薪资增长空间有限，使得从业者对通勤成本极为敏感。
+            </p>
+            <p class="mb-4">
+              与此同时，从城镇单位就业人员年平均工资数据来看，<strong>信息传输、软件和信息技术服务业，金融业</strong>等年平均工资最高的行业，其从业者通常更有能力负担市中心或公司附近的住房，通勤时间相对较短。而年平均工资较低的行业，如<strong>住宿和餐饮业、居民服务和其他服务业</strong>等，其从业者为了节省租金，往往需要承受更长的通勤时间。
+            </p>
+            <p><strong>收入水平与通勤时耗，呈现出清晰的负相关关系。</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <div class="feature-bg-image p-1 rounded" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); min-height: 50px;">
+            <tableau-viz id="tableauViz-industry" src="https://public.tableau.com/views/2_17678837089590/1?:embed=true&:showVizHome=no" toolbar="bottom" hide-tabs style="width:100%; height:500px; display: block;" class="rounded"></tableau-viz>
+            <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <i class="fas fa-chart-line me-1"></i> 图：行业薪资与通勤时耗关系 (可交互图表)
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2 small">数据来源：国家统计局《中国统计年鉴》</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="feature-bg-image p-1 rounded" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <img src="images/image4.png" alt="通勤成本与租金占比叠加分析图表" class="img-fluid rounded shadow-sm">
+            <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <i class="fas fa-money-bill-wave me-1"></i> 月通勤成本叠加经济压力
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2 mb-4"><i class="fas fa-mouse-pointer me-1"></i> 数据来源：微信公众号</p>
+        </div>
+        <div class="col-lg-5 ml-auto mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="pl-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #43e97b;">特征三</span>
+            <h2 class="text-black mb-4">通勤成本，成为压垮青年钱包的"最后一根稻草"</h2>
+            <p class="mb-4">
+              当我们将视角从时间转向金钱，通勤的压力更为具象。对职场人月通勤成本占调查人群比例的分析显示，绝大多数人的月通勤成本集中在 <strong class="text-danger">100-500元</strong> 区间。
+            </p>
+            <p class="mb-4">
+              这笔固定开销，在与重点城市租金占用月收入比情况的数据叠加后，构成了青年生存压力的全貌。在北上广深等一线城市，<strong>租金已占去青年人月收入的 30%-50%，甚至更高</strong>。通勤成本与住房成本的叠加，共同形成了一座"生活成本大山"。
+            </p>
+            <p class="mb-4">
+              为了维持基本的储蓄和可自由支配开支，青年们只能在居住区位上做出妥协，选择租金更低、通勤更远的边缘地带，用宝贵的时间来换取喘息的空间。
+            </p>
+            <div class="author-box" data-aos="fade-in">
+              <div class="d-flex align-items-center">
+                <div class="mr-3 flex-shrink-0">
+                  <i class="fas fa-balance-scale fa-2x" style="color: #38f9d7;"></i>
+                </div>
+                <div>
+                  <blockquote class="mb-0">
+                    &ldquo;一线城市青年：<strong>超30%的收入用于租房</strong>，外加数百元通勤费，双重挤压可支配收入。&rdquo;
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5" data-aos="fade-up">
+        <div class="col-md-8 text-center">
+          <div class="p-4 rounded" style="background-color: #f8f9fa; border-left: 4px solid #6c757d;">
+            <p class="mb-0 font-italic">
+              <i class="fas fa-exclamation-circle me-2"></i>综上，<strong>高学历青年、中低收入行业从业者</strong>构成了"通勤贫困"的核心画像。他们用更长的通勤距离与时间，置换在城市中生存与发展的微小空间，承受着体力、财力与心理上的多重消耗。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-light" id="part3">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10 text-center" data-aos="fade-up">
+          <h2 class="section-title mb-3">溯源分析："通勤贫困"何以成为都市宿命？</h2>
+          <p class="lead mb-0">
+            当我们将目光从"谁在承受"转向"为何承受"，数据揭示出的是一幅城市发展中的结构性困境。通勤贫困并非个人选择的偶然结果，而是城市空间、经济规律与个体决策相互作用的必然产物。
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="pr-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #667eea;">溯源一</span>
+            <h2 class="text-black mb-4">城市扩张的时空代价</h2>
+            <p class="mb-4">
+              根据《2020-2023城市规模和单程平均通勤耗时/单程平均通勤距离比重关系图》，<strong>超大城市的平均通勤距离和通勤时耗的增幅较其他城市高出25%</strong>。这种差距并非线性增长，而是随着城市能级的提升呈现加速扩大趋势。
+            </p>
+          </div>
+          <div class="feature-bg-image p-1 rounded mt-4 mb-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <tableau-viz id="tableauViz-dashboard1" src="https://public.tableau.com/shared/R8F9GMFXP?:display_count=n&:origin=viz_share_link?:embed=true&:showVizHome=no" toolbar="bottom" hide-tabs style="width:100%; height:680px; display: block;" class="rounded"></tableau-viz>
+            <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <i class="fas fa-tachometer-alt me-1"></i> 交互式仪表盘：城市规模、通勤耗时与距离的综合关系
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2 mb-4"><i class="fas fa-mouse-pointer me-1"></i> 数据来源：中国城市规划设计研究院《中国主要城市通勤监测报告》</p>
+          <p class="text-center text-muted mt-2 mb-4"><i class="fas fa-mouse-pointer me-1"></i> 提示：您可使用图表下方的工具栏查看详细数据；图中地图通过shift+鼠标可以移动，鼠标滚轮缩放</p>
+          <div class="pr-lg-5">
+            <p class="mb-4">
+              更为严峻的是通勤空间的持续扩张。对于城市职场人而言，城市的边界到哪里，通勤的征途就可能延伸到哪里。当城市的版图在规划图上向外拓展一尺，许多人的日常生活半径就被迫扩大一丈。这种个体通勤距离与城市物理规模之间的无形联动，构成了现代都市生活的一项基本定律。
+            </p>
+            <div class="data-highlight p-3 mb-4 rounded" style="background-color: #f8f9fa; border-left: 4px solid #764ba2;">
+              <h5 class="mb-2"><i class="fas fa-heartbeat me-2" style="color: #f5576c;"></i>健康代价数据</h5>
+              <p class="mb-1">根据多国研究：</p>
+              <ul class="mb-0">
+                <li>单程通勤 ≥1 小时者<strong>抑郁几率比平均水平高 33%</strong></li>
+                <li><strong>睡眠不足的可能性高 46%</strong></li>
+              </ul>
+              <p class="mb-0 mt-2 small">这意味着，通勤时间的延长不仅是一种时间消耗，更是一种健康负债。</p>
+            </div>
+            <p class="mb-0">
+              城市扩张带来的不仅是通勤距离的增长，更是对居民身心健康的系统性侵蚀。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-12" data-aos="fade-right">
+          <div class="pr-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #ff9a9e;">溯源二</span>
+            <h2 class="text-black mb-4">职住分离的恶性循环</h2>
+            <p class="mb-4">
+              通勤空间的扩张直接催生了"极端通勤"群体。《2020-2023城市通勤空间半径和60分钟以上通勤比重的关系》图表显示了一个令人担忧的趋势：<strong>通勤空间半径超过35公里的城市，其60分钟以上通勤人口比重均突破18%</strong>，且这一比重随着空间半径的扩大呈指数级增长。
+            </p>
+            <p class="mb-4">
+              这意味着通勤者不仅要在空间上移动更远，还要承受因线路复杂、换乘频繁带来的额外时间损耗。
+            </p>
+            <div class="data-highlight p-3 mb-4 rounded" style="background-color: #f8f9fa; border-left: 4px solid #ff9a9e;">
+              <h5 class="mb-2"><i class="fas fa-briefcase me-2" style="color: #ff9a9e;"></i>职住分离对工作的影响</h5>
+              <p class="mb-0">数据显示，每天通勤 >1 小时者：</p>
+              <ul class="mb-0">
+                <li><strong>工作失误风险高出 12%</strong></li>
+                <li><strong>缺勤风险高出 16%</strong></li>
+                <li><strong>有 23% 的员工曾因通勤问题而离职</strong></li>
+              </ul>
+            </div>
+            <p class="mb-0">
+              职住分离不仅挤压了个人的时间与空间，更直接影响了工作表现与职业发展。通勤不仅是身体的移动，更是对职业连续性与稳定性的隐形侵蚀。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-12 order-1 order-lg-2 mt-4" data-aos="fade-left">
+          <div class="feature-bg-image p-1 rounded" style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);">
+            <tableau-viz id="tableauViz-spaceradius" src="https://public.tableau.com/shared/S9YCN4P8S?:display_count=n&:origin=viz_share_link?:embed=true&:showVizHome=no" toolbar="bottom" hide-tabs style="width:100%; height:700px; display: block" class="rounded"></tableau-viz>
+            <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: .5rem; border-bottom-right-radius: .5rem;">
+              <i class="fas fa-arrows-alt-h me-1"></i> 交互式大图：通勤空间半径与极端通勤比重关系
+            </div>
+          </div>
+          <p class="text-center text-muted mt-2"><i class="fas fa-info-circle me-1"></i> 数据来源：中国城市规划设计研究院《中国主要城市通勤监测报告》</p>
+          <p class="text-center text-muted mt-2"><i class="fas fa-info-circle me-1"></i> 此图较大，建议使用右下角按钮全屏查看</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="feature-bg-image p-2 rounded mb-4" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+            <img src="images/image9.png" alt="青年通勤困扰统计" class="img-fluid rounded shadow-sm w-100" style="max-height: 350px; object-fit: contain; display: block; margin: 0 auto;">
+            <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6); border-radius: .3rem;">
+              <i class="fas fa-chart-pie me-1"></i> 通勤支出对生活质量的影响
+            </div>
+          </div>
+          <p class="text-center text-muted small mt-3">数据来源：微信公众号</p>
+          <div class="feature-bg-image p-2 rounded mb-4" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+            <img src="images/image10.png" alt="通勤对生活质量的影响" class="img-fluid rounded shadow-sm w-100" style="max-height: 350px; object-fit: contain; display: block; margin: 0 auto;">
+            <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6); border-radius: .3rem;">
+              <i class="fas fa-chart-bar me-1"></i> 通勤支出对低薄收入的挤压
+            </div>
+          </div>
+          <p class="text-center text-muted small mt-3">数据来源：微信公众号</p>
+          <div class="p-4 rounded" style="background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);">
+            <h5 class="mb-3"><i class="fas fa-balance-scale me-2"></i>核心结论</h5>
+            <p class="mb-2">青年选择长通勤虽在经济上"理性"，却在心理与生活品质上付出高昂代价。</p>
+            <ul class="small mb-0">
+              <li><strong>93.3%</strong> 的大城市青年表示被通勤不便困扰</li>
+              <li><strong>85.3%</strong> 认为通勤降低了幸福感</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 ml-auto mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="pl-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #a1c4fd;">溯源三</span>
+            <h2 class="text-black mb-4">经济理性下的被动选择</h2>
+            <p class="mb-4">
+              面对这样的空间困境，青年的选择实则是一种"两害相权取其轻"的经济理性。《重点城市租金占用月收入比情况》数据显示，在核心城区，<strong>租金收入比普遍超过40%</strong>，而在城市外围区域，<strong>这一比例可降至25%以下</strong>。对于收入有限的青年而言，选择长通勤实际上是在用时间成本置换直接的居住成本。
+            </p>
+            <div class="data-highlight p-3 mb-4 rounded" style="background-color: #f0f8ff; border: 1px dashed #a1c4fd;">
+              <h5 class="mb-3"><i class="fas fa-calculator me-2" style="color: #a1c4fd;"></i>算一笔经济账：月收入8000元青年的选择</h5>
+              <div class="row text-center">
+                <div class="col-6">
+                  <div class="p-2 mb-2 rounded" style="background-color: #e7f1ff;">
+                    <small class="d-block">市中心居住</small>
+                    <strong class="h5 text-dark">3,200元</strong>
+                    <small class="d-block text-muted">租金 (40%收入)</small>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-2 mb-2 rounded" style="background-color: #ffeaea;">
+                    <small class="d-block">外围居住 (通勤60分钟)</small>
+                    <strong class="h5 text-dark">2,000元</strong>
+                    <small class="d-block text-muted">租金 (25%收入)</small>
+                  </div>
+                </div>
+              </div>
+              <p class="mb-2 mt-3">即便计入每月 <strong>300-500元</strong> 的通勤成本，每月仍能节省 <strong>700-1,000元</strong>，相当于收入的 <strong>9%-12%</strong>。</p>
+              <p class="mb-0 small">这正是《青年收入分布比例》中显示的，为何大量月收入在3000-8000元的青年主动选择了"极端通勤"。</p>
+            </div>
+            <p class="mb-2">他们最常提到的负面影响包括：</p>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="fas fa-chevron-right me-2 text-primary"></i>降低工作效率 <strong class="text-dark">(65.2%)</strong></li>
+              <li class="mb-2"><i class="fas fa-chevron-right me-2 text-primary"></i>每天情绪不佳 <strong class="text-dark">(59.5%)</strong></li>
+              <li class="mb-0"><i class="fas fa-chevron-right me-2 text-primary"></i>睡眠不足 <strong class="text-dark">(57.9%)</strong></li>
+            </ul>
+            <p class="mt-3 mb-0">
+              这说明，通勤贫困不仅是一种经济权衡，更是一种生活质量的系统性妥协。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5" data-aos="fade-up">
+        <div class="col-lg-8 text-center">
+          <div class="p-4 rounded" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+            <h4 class="mb-3"><i class="fas fa-link me-2"></i>结构性困境的闭环</h4>
+            <p class="mb-0">
+              通勤贫困的形成与固化，揭示了一个由<strong>城市扩张</strong>、<strong>职住分离</strong>和<strong>个体经济理性</strong>共同构成的闭环。青年们在其中做出的"理性选择"，实则是对系统性压力的被动适应。要破解这一都市宿命，需要超越个体层面的努力，从城市规划、住房政策与交通体系等结构性维度寻找突破口。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-white" id="part4">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-3">"在路上"的代价：被吞噬的健康与未来</h2>
+          <p class="lead">
+            青年们选择长通勤是一种"经济理性"下的被动妥协。然而，这种"理性"所支付的隐性代价——对身心健康、个人发展和职业未来的侵蚀——远比账面上节省的几百元租金要沉重得多。
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="feature-bg-image p-2 rounded mb-4" style="background: linear-gradient(135deg, #8a2387 0%, #f27121 100%);">
+            <img src="images/background/bg4.jpg" alt="通勤的疲惫" class="img-fluid rounded shadow-sm w-100" style="max-height: 350px; object-fit: contain; display: block; margin: 0 auto;">
+            <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6);">
+              <i class="fas fa-brain me-1"></i> 长时间的拥挤与等待持续消耗着通勤者的情绪能量
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ml-auto mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="pl-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #8a2387;">代价一</span>
+            <h3 class="text-black mb-4">个体福祉："时间荒"与"情绪耗竭"</h3>
+            <p class="mb-4">
+              通勤贫困带来的首要冲击，是对个人可支配时间的极限压缩，即"时间荒"。当每日往返的2-3小时成为固定损耗，"下班后"的生活便名存实亡。
+            </p>
+            <p class="mb-4">
+              更严重的是心理层面的耗竭。长时间的拥挤、换乘和对"迟到"的焦虑，持续拉高了通勤者的压力水平。
+            </p>
+            <div class="data-highlight p-4 mb-4 rounded" style="background-color: #f8f9fa; border-left: 4px solid #f27121;">
+              <p class="font-italic mb-0">
+                "下班路上拥挤的车厢常让我感到莫名的烦躁与窒息，这种低落的情绪甚至会延续到家里，让我对家人也缺乏耐心。"
+              </p>
+              <footer class="blockquote-footer mt-2">受访青年 <cite title="李明">李明</cite></footer>
+            </div>
+            <p class="mb-0">
+              研究显示，通勤时间与精神健康状况呈负相关，长时间通勤者报告情绪疲劳和压力的比例显著更高。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-5 order-2 order-lg-1 mr-auto mt-4 mt-lg-0" data-aos="fade-right">
+          <div class="pr-lg-5">
+            <span class="sub-title mb-2 d-block" style="color: #1a2980;">代价二</span>
+            <h3 class="text-black mb-4">职业发展：被"距离"固化的晋升天花板</h3>
+            <p class="mb-4">
+              通勤疲劳并不会在"打卡"那一刻消失，它会直接转化为工作投入度的下降。然而比精力损耗更隐蔽的，是职业流动性的受限。
+            </p>
+            <div class="data-highlight p-4 mb-4 rounded" style="background-color: #f0f8ff; border: 2px solid #1a2980;">
+              <h5 class="mb-3"><i class="fas fa-clock me-2"></i>被通勤吞噬的"发展时间"</h5>
+              <p class="display-6 text-center mb-1" style="color: #1a2980;">400+ 小时</p>
+              <p class="text-center text-muted">极端通勤者每年额外消耗在路上的时间，相当于 <strong>10周</strong> 的全职工作。</p>
+            </div>
+            <p class="mb-4">
+              这原本可以是学习新技能、锻炼、陪伴家人或发展兴趣的"发展时间"。通勤贫困实质上是剥夺了个人对自身时间的<strong>"时间主权"</strong>，导致生活选择变得极其有限，陷入工作-通勤-休息的恶性循环。
+            </p>
+            <p class="mb-0">
+              当个人发展时间被大规模挤占，职业晋升的通道与可能性也在无形中被收窄。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <div class="feature-bg-image p-2 rounded" style="background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);">
+            <img src="images/background/bg5.jpg" alt="通勤带来的困扰" class="img-fluid rounded shadow-sm w-100" style="max-height: 350px; object-fit: contain; display: block; margin: 0 auto;">
+            <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6);">
+              <i class="fas fa-chart-line me-1"></i> 时间流逝、成长停滞的压迫感
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 site-section" data-aos="fade-up">
+        <div class="col-lg-10">
+          <div class="text-center mb-5">
+            <span class="sub-title mb-2 d-block" style="color: #11998e;">代价三</span>
+            <h3 class="text-black mb-4">社会活力与城市创造力的隐性流失</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="h-100 p-4 rounded text-center" style="background-color: #fff; border-top: 5px solid #11998e;">
+                <i class="fas fa-lightbulb fa-2x mb-3" style="color: #11998e;"></i>
+                <h5>创新能量被压缩</h5>
+                <p>当最富创造力的青年群体将大量精力耗损在路途上，整个城市用于创新、社交和消费的潜在能量就被压缩了。</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="h-100 p-4 rounded text-center" style="background-color: #fff; border-top: 5px solid #38ef7d;">
+                <i class="fas fa-users fa-2x mb-3" style="color: #38ef7d;"></i>
+                <h5>社区凝聚力减弱</h5>
+                <p>普遍存在的通勤疲惫，让人们下班后更倾向于独处而非参与社区活动，削弱了社会联结。</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="h-100 p-4 rounded text-center" style="background-color: #fff; border-top: 5px solid #00b09b;">
+                <i class="fas fa-city fa-2x mb-3" style="color: #00b09b;"></i>
+                <h5>发展账本上的赤字</h5>
+                <p>一个让居民普遍感到疲惫的城市，其文化活力与长期的经济创新能力都会受到抑制。这笔巨大的社会成本不容忽视。</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5" data-aos="fade-up">
+            <div class="feature-bg-image p-1 rounded" style="background: linear-gradient(to right, #11998e, #38ef7d);">
+              <img src="images/background/bg6.jpg" alt="通勤的拥挤和忙碌" class="img-fluid rounded shadow-sm w-100" style="max-height: 350px; object-fit: contain; display: block; margin: 0 auto;">
+              <div class="img-caption text-center p-2 text-white small" style="background: rgba(0,0,0,0.6);">
+                <i class="fas fa-mountain-city me-1"></i> 通勤的密集、快节奏与个体渺小感
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-light" id="part5">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-3">破局之道：回家的路，能近一点吗？</h2>
+          <p class="lead">
+            "通勤贫困"是城市规划、住房政策、交通布局与企业责任共同作用下的结构性民生痛点。要缩短回家的路，需要多方力量共同"相向而行"。
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-stretch mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-6 d-flex flex-column">
+          <div class="pr-lg-5 mb-4 flex-grow-1">
+            <span class="sub-title mb-3 d-block" style="color: #1a759f;">方向一</span>
+            <h2 class="text-black mb-4">顶层设计：从"摊大饼"转向"职住平衡"</h2>
+            <p class="mb-4">
+              第三部分的溯源分析已明确指出，"职住分离"是问题的根源。因此，<strong>城市规划的转向是破局的关键</strong>。
+            </p>
+            <div class="solution-step mb-4 p-4 rounded" style="background-color: #e8f4fc; border-left: 4px solid #1a759f;">
+              <h5 class="d-flex align-items-center mb-3">
+                <span class="step-number d-inline-flex align-items-center justify-content-center rounded-circle me-3" style="width: 32px; height: 32px; background-color: #1a759f; color: white;">1</span>
+                规划引导
+              </h5>
+              <p class="mb-0">
+                在城市新城规划和旧城更新中，坚决推行<strong>产业、居住、商业服务的混合布局</strong>，从源头上减少"睡城"与"产业空心"带来的潮汐通勤压力。
+              </p>
+            </div>
+            <div class="solution-step p-4 rounded" style="background-color: #e8f4fc; border-left: 4px solid #34a0a4;">
+              <h5 class="d-flex align-items-center mb-3">
+                <span class="step-number d-inline-flex align-items-center justify-content-center rounded-circle me-3" style="width: 32px; height: 32px; background-color: #34a0a4; color: white;">2</span>
+                交通优化
+              </h5>
+              <p class="mb-0">
+                针对已形成的"极端通勤"走廊，通过大数据分析，优化公交线路，加密高峰时段发车班次，并推行更合理的<strong>票价优惠政策</strong>，例如：
+              </p>
+              <ul class="mt-2 mb-0 pl-3">
+                <li><strong>"通勤距离越长，单位里程票价越低"的阶梯优惠</strong></li>
+                <li><strong>月度通勤费用封顶政策</strong></li>
+              </ul>
+              <p class="mt-2 mb-0 small text-muted">
+                让长距离通勤者获得实质性的经济减压。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+          <div class="h-100 d-flex flex-column justify-content-center">
+            <div class="feature-bg-image p-2 rounded shadow" style="background: linear-gradient(135deg, #1a759f 0%, #34a0a4 100%);">
+              <img src="images/background/bg8.jpg" alt="未来城市与交通规划概念图" class="img-fluid rounded">
+              <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6);">
+                <i class="fas fa-city me-1"></i> 迈向"职住平衡"的智慧城市规划
+              </div>
+            </div>
+            <p class="text-center text-muted small mt-3">
+              数据来源：广州市人民政府官网
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-stretch mb-5 site-section" data-aos="fade-up">
+        <div class="col-lg-6 d-none d-lg-block mb-4 mb-lg-0" data-aos="fade-right">
+          <div class="h-100 d-flex flex-column justify-content-center">
+            <div class="feature-bg-image p-2 rounded shadow" style="background: linear-gradient(135deg, #f48c06 0%, #ffba08 100%);">
+              <img src="images/background/bg9.jpg" alt="弹性办公与团队协作场景" class="img-fluid rounded">
+              <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6);">
+                <i class="fas fa-users me-1"></i> 灵活办公模式提升员工幸福感与效率
+              </div>
+            </div>
+            <p class="text-center text-muted small mt-3">
+              数据来源：招聘平台
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-column">
+          <div class="pl-lg-5 mb-4 flex-grow-1">
+            <span class="sub-title mb-3 d-block" style="color: #f48c06;">方向二</span>
+            <h2 class="text-black mb-4">企业责任：从"成本"转向"投资"</h2>
+            <p class="mb-4">
+              在"通勤贫困"中，企业不应是隐身的旁观者。将通勤管理纳入人力资源策略，既是社会责任的体现，也是<strong>提升吸引力、降低离职率的"人力投资"</strong>。
+            </p>
+            <div class="feature-bg-image p-2 rounded shadow mb-4 d-block d-lg-none">
+              <img src="images/background/bg9.jpg" alt="弹性办公与团队协作场景" class="img-fluid rounded">
+              <div class="img-caption text-center p-2 text-white small mt-2" style="background: rgba(0,0,0,0.6);">
+                <i class="fas fa-users me-1"></i> 灵活办公模式提升员工幸福感与效率
+              </div>
+            </div>
+            <div class="solution-step mb-4 p-4 rounded" style="background-color: #fff5e6; border-left: 4px solid #f48c06;">
+              <h5 class="d-flex align-items-center mb-3">
+                <i class="fas fa-bus-alt me-3 fa-lg" style="color: #f48c06;"></i>
+                福利覆盖：通勤支持
+              </h5>
+              <p class="mb-0">
+                鼓励和引导企业将<strong>通勤补贴、接驳班车</strong>作为标准福利写入劳动合同。这不仅是企业社会责任的体现，更是吸引和保留核心人才的重要手段。
+              </p>
+            </div>
+            <div class="solution-step p-4 rounded" style="background-color: #fff5e6; border-left: 4px solid #ffba08;">
+              <h5 class="d-flex align-items-center mb-3">
+                <i class="fas fa-laptop-house me-3 fa-lg" style="color: #ffba08;"></i>
+                工作模式创新：弹性与远程
+              </h5>
+              <p class="mb-0">
+                大力推广<strong>弹性工作制</strong>与<strong>远程办公</strong>。对于非必须到岗的岗位，允许员工每周有1-2天居家办公，能从根源上减少通勤频次，赋予员工支配时间的自主权，显著提升工作幸福感与效率。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 bg-light" data-aos="fade-up">
+        <div class="col-lg-10 text-center">
+          <div class="p-5 rounded" style="background: linear-gradient(135deg, #1a759f 0%, #34a0a4 50%, #f48c06 100%); color: white;">
+            <h3 class="mb-3 text-white">通往"时间主权"的未来</h3>
+            <p class="mb-0 lead">
+              破解"通勤贫困"，并非一日之功。它需要城市管理者、企业与每位市民的共识与行动。当城市规划更人性、企业制度更灵活、社会观念更多元时，我们才能共同铺就一条更短、更轻松的回家的路，让每个人真正重获对生活的"时间主权"。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-white pt-5" id="end-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-3">结语：丈量通往尊严与效率的每一里路</h2>
+          <p class="lead">
+            通勤，不应是生活与工作之间一片被耗尽的荒野。它理应是一条有尊严、有效率、有温度的连接通道。
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5" data-aos="fade-up">
+        <div class="col-lg-10">
+          <div class="p-5 rounded text-center" style="background: linear-gradient(135deg, #1a759f 0%, #34a0a4 100%); color: white;">
+            <h4 class="mb-4"><i class="fas fa-eye me-2"></i>看见"账本"背后人的价值</h4>
+            <p class="mb-0 lead" style="opacity: 0.95;">
+              解决"通勤贫困"问题，不仅需要算清经济的账，更需要看见账本背后<strong>人的价值</strong>——那些被压缩的时间主权、被消耗的情绪能量，以及本可用于学习与陪伴的发展可能。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <h4 class="text-center w-100 mb-4">通往"有温度连接"的三个维度</h4>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-100 p-4 rounded text-center d-flex flex-column" style="background-color: #fff; border-top: 5px solid #ff9a9e; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <img src="images/background/bg10.png" alt="互帮互助" class="img-fluid rounded">
+            <h5 class="mb-3" style="margin-top: 20px">尊严：不被挤压的出行体验</h5>
+            <p class="flex-grow-1">
+              告别"沙丁鱼罐头"般的拥挤，让每一次出发与抵达，都保有基本的体面与舒适。这是对劳动者最基本的尊重。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-100 p-4 rounded text-center d-flex flex-column" style="background-color: #fff; border-top: 5px solid #4facfe; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <img src="images/background/bg11.jpg" alt="高效的通勤系统" class="img-fluid rounded">
+            <h5 class="mb-3" style="margin-top: 20px">效率：可预期的通勤时间</h5>
+            <p class="flex-grow-1">
+              通过科学的城市规划与智能调度，将通勤时间从"未知的焦虑"变为"可控的计划"，把时间主权真正归还给个人。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-100 p-4 rounded text-center d-flex flex-column" style="background-color: #fff; border-top: 5px solid #38ef7d; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <img src="images/background/bg12.jpg" alt="和谐幸福" class="img-fluid rounded">
+            <h5 class="mb-3" style="margin-top: 20px">温度：可连接的生活场景</h5>
+            <p class="flex-grow-1">
+              缩短的不仅是物理距离，更是心理距离。让通勤之路能够串联起生活、兴趣与社交，而非割裂它们。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-lg-10">
+          <div class="p-4 p-md-5 rounded" style="background-color: #fff; border: 2px solid #e9ecef;">
+            <h4 class="text-center mb-4">对城市未来最明智的投资</h4>
+            <p class="mb-4">
+              当一个城市开始用心丈量其居民的每一段通勤路，并致力于将其缩短，那便是对<strong>"以人为本"</strong>最真切的践行。这要求管理者、企业与社会的共同"相向而行"：
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>规划者</strong>需超越"摊大饼"思维，坚定推动<strong>职住平衡</strong>与混合布局，从源头上治愈"潮汐通勤"。</li>
+              <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>企业</strong>应将员工的通勤福利与灵活办公视为重要的人力资本投资，而非单纯成本。</li>
+              <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> <strong>我们每个人</strong>，既是承受者，也是推动者。关注、讨论并呼吁，让"通勤福祉"成为衡量城市文明的重要尺度。</li>
+            </ul>
+            <hr class="my-4">
+            <blockquote class="blockquote text-center font-italic text-muted my-4">
+              <p class="mb-0">"改坐公交后，一个月省下两千多元……但上班的通勤时间，却从过去的一个半小时变为近3个小时。"</p>
+              <footer class="blockquote-footer mt-2">来自一位"北漂"的通勤账本</footer>
+            </blockquote>
+            <hr class="my-4">
+            <p class="text-center lead mb-0">
+              这条路，关乎时间，关乎金钱，更关乎千万人的生活质量与城市可持续发展的未来。缩短回家的路，就是拉近人与幸福的距离，这无疑是<strong>对城市未来最明智的投资</strong>。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section bg-light pt-5" id="discuss-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5" data-aos="fade-up">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title mb-3">您的通勤故事，也是重要数据</h2>
+          <p class="lead">这份报告描绘了群体的画像，而每个人的体验都是独特的注脚。欢迎分享您的观察、感受或建议。</p>
+        </div>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-8">
+          <form action="#" class="p-4 p-md-5 bg-white rounded shadow-sm">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="perspective">您的观点或故事 (可选)</label>
+                <textarea name="perspective" id="perspective" cols="30" rows="5" class="form-control" placeholder="例如：您如何应对长通勤？对改善城市通勤有何设想？"></textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="text-black" for="city">您所在的城市 (可选)</label>
+                <input type="text" id="city" class="form-control" placeholder="帮助我们理解地域差异">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12 text-center">
+                <input type="submit" value="分享观点" class="btn btn-primary px-5 py-2">
+                <p class="small text-muted mt-3">提交的内容可能会在匿名化后，用于未来的数据更新或专题讨论。</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <h5 class="mb-4">让讨论继续</h5>
+          <p class="mb-4 small">如果您觉得这份报告有价值，欢迎分享给更多的朋友、同事或城市管理者，共同关注"通勤贫困"这一现代都市症结。</p>
+          <div class="mb-4">
+            <a href="#" class="btn btn-outline-light btn-sm m-1" title="分享到微博">分享到微博<i class="fab fa-weibo"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm m-1" title="分享到微信">分享到微信<i class="fab fa-weixin"></i></a>
+            <a href="#" class="btn btn-outline-light btn-sm m-1" title="通过邮件分享">通过邮件分享<i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4 border-top border-secondary">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 small">
+            <strong>报告名称：</strong>《职场青年为何停留在"通勤贫困线"上？》<br>
+            <strong>数据周期：</strong>2020-2023年 | <strong>最后更新：</strong>2023年10月
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <p class="mb-0 small">
+            © 2023 通勤洞察. 本报告基于公开数据与调研分析，仅供参考与讨论。<br>
+            <a href="#home-section" class="text-light-50">回到首页</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
